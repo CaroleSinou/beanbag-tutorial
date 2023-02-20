@@ -24,31 +24,31 @@ This file create the ‘Content’ page for that issue (<https://www.legumedata.
 
 ![](/images/contentPage.png)
 
-This page is the equivalent to the Table of Content in the PDF version.  
-You can open the XXcontent.md file available for older issues to understand how it is constructed.  
-The first part of the file (at the top of the file) is called "Front Matter" and allows to specify parameters.
+	This page is the equivalent to the Table of Content in the PDF version.  
+	You can open the XXcontent.md file available for older issues to understand how it is constructed.  
+	The first part of the file (at the top of the file) is called "Front Matter" and allows to specify parameters.
 
-Ex.:   
-\---  
-layout: post  
-lang-ref: /beanbag/69content  
-title: Issue 69, Year 2022  
-background: /assets/images/69/welcome_mimosa.jpg  
-description: Content of the issue 69 (2022)  
-height: 70vh  
----\  
+	Ex.:   
+	\---  
+	layout: post  
+	lang-ref: /beanbag/69content  
+	title: Issue 69, Year 2022  
+	background: /assets/images/69/welcome_mimosa.jpg  
+	description: Content of the issue 69 (2022)  
+	height: 70vh  
+	---\  
 
-- Layout specifies the type of layout used for the page
-- lang-ref gives access to the page in the selected language. Note: we do not translate BB content, and we do not create a French version of each file
-- title is the title displayed on the page
-- background is used to specify the image used in background
-- description is a short description displayed after the title
-- height specifies the size of the image (the part that will be displayed)
+	- Layout specifies the type of layout used for the page
+	- lang-ref gives access to the page in the selected language. Note: we do not translate BB content, and we do not create a French version of each file
+	- title is the title displayed on the page
+	- background is used to specify the image used in background
+	- description is a short description displayed after the title
+	- height specifies the size of the image (the part that will be displayed)
 
-After the front matter, you will be able to copy-paste the text from the Table of Content of the PDF version of the Bean Bag, and you will need to format it.  
-You can find more information about mardown basic syntax [here](https://www.markdownguide.org/basic-syntax/).
+	After the front matter, you will be able to copy-paste the text from the Table of Content of the PDF version of the Bean Bag, and you will need to format it.  
+	You can find more information about mardown basic syntax [here](https://www.markdownguide.org/basic-syntax/).
 
-To include images within the page, you can use [markdown syntax](https://www.markdownguide.org/basic-syntax/#images-1) or html (when you want the image to be embended within the text, like in this page: <https://www.legumedata.org/beanbag/69/issue-69-rupert-barneby-award>)  
+	To include images within the page, you can use [markdown syntax](https://www.markdownguide.org/basic-syntax/#images-1) or html (when you want the image to be embended within the text, like in this page: <https://www.legumedata.org/beanbag/69/issue-69-rupert-barneby-award>)  
 
 
 3. In folder /assets/images/, create a folder corresponding to the volume number.  
@@ -59,17 +59,17 @@ All images you want to include in the Bean Bag needs to be place in this folder.
 5. In "\_data", open the file "beanbag.md" (also the same file within "\_data/fr/").  
 Just after the line starting by "features", add these information:
 
-\- preTitle: Year XXXX  # corresponding year of the volume  
-      title: Issue XX # XX is the number of the volume  
-      background: /assets/images/XX/Name_of_the_image_on_the_cover.jpg  
-      href: /beanbag/XX/XXcontent # replace XX by the number of the volume  
-      cta:  
-      - text: Download  
-        href: /media/The_BB_Newsletter_IssueXX_20XX.pdf # file name of the PDF version of the BB, located in the "media" folder  
-        isPrimary: true  
-      - text: Read  
-        href: /beanbag/XX/XXcontent # link to the content page for the XX volume  
-        isPrimary: true  
+	\- preTitle: Year XXXX  # corresponding year of the volume  
+	      title: Issue XX # XX is the number of the volume  
+	      background: /assets/images/XX/Name_of_the_image_on_the_cover.jpg  
+	      href: /beanbag/XX/XXcontent # replace XX by the number of the volume  
+	      cta:  
+	      - text: Download  
+	        href: /media/The_BB_Newsletter_IssueXX_20XX.pdf # file name of the PDF version of the BB, located in the "media" folder  
+	        isPrimary: true  
+	      - text: Read  
+	        href: /beanbag/XX/XXcontent # link to the content page for the XX volume  
+	        isPrimary: true  
 
 ![](/images/BeanBag-Issue-page.png)
 
