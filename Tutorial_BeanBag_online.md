@@ -22,7 +22,7 @@ This information will be displayed in the left panel of each BB page on the port
 Within that folder, create a file called XXcontent.md (replacing XX by the issue number).  
 This file create the ‘Content’ page for that issue (<https://www.legumedata.org/beanbag/69/69content/>).
 
-![](/images/contentPage.png)
+	![](/images/contentPage.png)
 
 	This page is the equivalent to the Table of Content in the PDF version.  
 	You can open the XXcontent.md file available for older issues to understand how it is constructed.  
